@@ -1,7 +1,7 @@
 import requests
 
 def get_profile_info(tag):
-    HEADERS = {'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6IjEyODA4MzRmLTk3ZDgtNDM3MS04NWM4LTY5YTY4MWYxNmY5YyIsImlhdCI6MTY1MjQ0MzE5Niwic3ViIjoiZGV2ZWxvcGVyLzYyY2ZkM2IyLTA3OGMtZmZlZS1hZjUzLWY2MmQxMjViOTk0OSIsInNjb3BlcyI6WyJyb3lhbGUiXSwibGltaXRzIjpbeyJ0aWVyIjoiZGV2ZWxvcGVyL3NpbHZlciIsInR5cGUiOiJ0aHJvdHRsaW5nIn0seyJjaWRycyI6WyIxMDkuMjA3LjExOC4xNjgiXSwidHlwZSI6ImNsaWVudCJ9XX0.4Oo9-BKHv2kFUKc2pjYSKa1LQe9kjw5kQ7J-Of2cVJWNHTi_fVgwOkW7Gp5MGH0NPcZrywnwJX1nUnAv9d4n2w'}
+    HEADERS = {'Authorization': 'Bearer YOUR_API_KEY'}
     url = 'https://api.clashroyale.com/v1/players/%23{}/'
     data = requests.get(url.format(tag), headers=HEADERS).json()
     return data
@@ -9,7 +9,7 @@ def get_profile_info(tag):
 
 
 def get_last_chest_info(tag):
-    HEADERS = {'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6IjEyODA4MzRmLTk3ZDgtNDM3MS04NWM4LTY5YTY4MWYxNmY5YyIsImlhdCI6MTY1MjQ0MzE5Niwic3ViIjoiZGV2ZWxvcGVyLzYyY2ZkM2IyLTA3OGMtZmZlZS1hZjUzLWY2MmQxMjViOTk0OSIsInNjb3BlcyI6WyJyb3lhbGUiXSwibGltaXRzIjpbeyJ0aWVyIjoiZGV2ZWxvcGVyL3NpbHZlciIsInR5cGUiOiJ0aHJvdHRsaW5nIn0seyJjaWRycyI6WyIxMDkuMjA3LjExOC4xNjgiXSwidHlwZSI6ImNsaWVudCJ9XX0.4Oo9-BKHv2kFUKc2pjYSKa1LQe9kjw5kQ7J-Of2cVJWNHTi_fVgwOkW7Gp5MGH0NPcZrywnwJX1nUnAv9d4n2w'}
+    HEADERS = {'Authorization': 'Bearer YOUR_API_KEY'}
     url = 'https://api.clashroyale.com/v1/players/%23{}/upcomingchests/'
     data = requests.get(url.format(tag), headers=HEADERS).json()
     return data
