@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<script>
+</script>
+
+
+<div class="container">
+    <div id="profile-stat-card">
+        <div class="row">
+            <div id="main-info">
+                <div id="columns">
+                    <div id="first-column">
+                        <div id="name-block">
+                            <h3 id="name">{{ info.name }}</h3>
+                            <h6 id="tag">{{ info.tag }}</h6>
+                            <div id="lvl">Level: {{ info.level }}</div>
+                            <div id="trophy-block">
+                                <img id='img-trophy' src="https://static.wikia.nocookie.net/clash-royale/images/c/ce/Trophy-0.png/revision/latest?cb=20160124024132&path-prefix=ru" alt="">
+                                <div id="current-trophies">
+                                    {{ info.trophies }}
+                                </div>
+                                <div id="wins-losses">
+                                    <div id="win">W: {{ info.wins }}</div>
+                                    <div id="loss">L: {{ info.losses }}</div>
+                                    <div id="w-l">W/L: {{ info.w_l_stat }}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="second-column">
+                        <div id="arena-block">
+                            <img id="arena-image" src="https://cdn.royaleapi.com/static/img/arenas-fs8/128x128/arena{{ info.arena }}-fs8.png?t=a44f48d7c?2" alt="">
+                            <div id="arena-name">Arena {{ info.arena }}</div>
+                        </div>
+
+                    </div>
+                    <div id="third-column">
+                        <h3>Current deck:</h3>
+                        {% for item in info.currentDeck %}
+                        <div id="card-deck-block">
+                            <img id="card-deck" src="{{ item.iconUrls.medium }}" alt="">
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <div id="last-chests-card">
+                <div id="chests-row">
+                    <h1 id="last-chests-title">{{ name }}'s last chests: </h1>
+                    {% for item in chests %}
+                    <div id="chest-table">
+                        <img id="chest-img" src="{{ item.icon }}" alt="">
+                        <div id="chest-index-time">
+
+                            + {{ item.index }}
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

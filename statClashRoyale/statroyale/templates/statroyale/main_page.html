@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<script>
+    function goToProfileStat() {
+        let tag = $('input[name=tag-input]').val();
+        tag = tag.replace('#', '');
+        tag = tag.toUpperCase();
+        if (tag.length >= 9) {
+            window.location = 'profile-statistics/' + tag;
+        }
+        else{
+            document.getElementById('error-tag').innerHTML = '';
+            document.getElementById('error-tag').innerHTML = 'incorrect tag';
+        }
+    }
+
+
+
+</script>
+
+
+<div class="container">
+    <div class="row">
+        <div id="invitation-card">
+            <h1>Here you can see your account statistics</h1>
+            <div id="tag-input-block">
+                <h5>Your player tag:</h5>
+                <div id="error-tag">
+
+                </div>
+                <input type="text" name="tag-input" class="form-control">
+            </div>
+            <div id="buttons">
+                <button type="button" id="profile-statistics-btn" onclick="goToProfileStat()" class="btn btn-primary">Check profile statistics</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

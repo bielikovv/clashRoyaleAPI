@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+body{
+    background-size: 100%;
+    background-image: url("1124069.jpg");
+    width: 100%;
+    background-attachment: fixed;
+    font-family: 'Bungee', cursive;
+}
+
+.navbar-brand{
+    color: #ffffff;
+
+}
+.navbar-brand:hover{
+    color: #f5dd5d;
+}
+
+.form-control{
+    border-radius: 0px;
+    margin-bottom: 10px;
+}
+
+.form-control:focus{
+    box-shadow: none;
+    border-color: #cccccc;
+}
+
+.navbar{
+    margin-bottom: 50px;
+}
+
+#invitation-card{
+    background-color: #ffffff;
+    width: 50%;
+    padding: 25px;
+    color: #429042;
+}
+
+#main-info{
+    width: 35%;
+    background-color: #429042;
+    padding: 25px;
+}
+
+.btn-primary{
+    background-color: #429042;
+    border-width: 0px;
+}
+
+.btn-primary:hover{
+    background-color: #fdf53b;
+    color: #429042;
+}
+
+.btn-primary:active{
+    background-color: #fdf53b;
+    color: #429042;
+    box-shadow: none;
+}
+
+.btn-primary:focus{
+    background-color: #fdf53b;
+    color: #429042;
+    box-shadow: none;
+}
+
+#name{
+    color: #ffffff;
+}
+#card-deck{
+    width: 75px;
+}
+#card-deck-block{
+    display: inline-block;
+}
+
+#third-column{
+    color: #ffffff;
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#arena-image{
+    width: 175px;
+}
+#tag{
+    color: #bcdeff;
+}
+
+#img-trophy{
+    width: 40px;
+    display: inline-block;
+}
+
+#current-trophies{
+    display: inline-block;
+    color: #f5ff72;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+#win{
+    color: #50bb29;
+    display: inline-block;
+}
+
+#wins-losses{
+    text-align: center;
+    background-color: #667e96;
+    color: #e3c22f;
+}
+#loss{
+    color: #d64241;
+    display: inline-block;
+}
+
+#error-tag{
+    color: #d64241;
+}
+
+#lvl{
+    display: inline-block;
+    color: #39cce4;
+
+}
+
+#chest-table{
+    display: inline-block;
+    margin-left: 12px;
+    margin-right: 12px;
+    color: #429042;
+}
+
+#profile-stat-card{
+    display: inline-block;
+    margin-top: -25px;
+}
+
+
+#last-chests-card{
+    background-color: #ffffff;
+    padding: 25px;
+    text-align: center;
+    color: #429042;
+    width: 65%;
+    display: inline-block;
+}
+#last-chests-title{
+    margin-bottom: 15px;
+}
+
+
+#chest-img{
+    width: 100px;
+    display: inline-block;
+}
+
+#first-column, #second-column{
+    width: 45%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+#arena-name{
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bolder;
+
+}
